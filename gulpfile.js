@@ -39,10 +39,6 @@ gulp.task("images", function () {
 
 gulp.task("html", ["scripts", "styles"], function () {
   return gulp.src("./src/index.html")
-  .pipe($.useref({ searchPath: [".tmp", "build", "."] }))
-  .pipe($.if("*.js", $.rev()))
-  .pipe($.if("*.css", $.rev()))
-  .pipe($.revReplace())
   .pipe($.if("*.html", $.htmlmin({ collapseWhitespace: true })))
   .pipe(gulp.dest("./build"));
 });
