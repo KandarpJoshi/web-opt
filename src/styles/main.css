@@ -97,12 +97,10 @@ body,
 
 .list_item-hover {
   background: rgba(125, 151, 173, .1);
-  /*background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(176, 202, 224, .1) 42%, rgba(125, 151, 173, .1) 100%)*/
 }
 
 .list_item-active {
   background: rgba(125, 151, 173, .3);
-  /*background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(176, 202, 224, .3) 42%, rgba(125, 151, 173, .3) 100%)*/
 }
 
 .list_item_avatar {
