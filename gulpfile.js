@@ -13,7 +13,6 @@ gulp.task("styles", function () {
     "./src/styles/main.css"
   ])
   .pipe($.concat("main.css"))
-  .pipe($.autoprefixer({ browsers: ["> 1%", "last 2 versions", "Firefox ESR"] }))
   .pipe($.cssnano({ safe: true, autoprefixer: false }))
   .pipe(gulp.dest("./build/styles"));
 
